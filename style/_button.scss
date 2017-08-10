@@ -1,0 +1,13 @@
+button {
+  border: none;
+  background-color: inherit;
+  border: 1px solid $BORDERCOLOR;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(#999, 0.3);
+  }
+}

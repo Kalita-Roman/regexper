@@ -1,0 +1,45 @@
+.texts {
+  .texts_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 26px; 
+
+    .texts_button_add {
+      width: 100px;
+    }
+  }
+
+  .item-enter.item-enter-active {
+    opacity: 1;
+    animation-name: ex;
+    animation-duration: 300ms;
+  }
+
+  .item-leave {
+    opacity: 1;
+    height: 0;
+  }
+
+  .item-leave.item-leave-active {
+    opacity: 0;
+    height: 0;
+    animation-name: ex;
+    animation-duration: 200ms;
+    animation-direction: reverse;
+  }
+
+  @keyframes ex {
+    0%   {
+      opacity: 0;
+      height: 0;
+    }
+    50%  {
+      opacity: 0;
+      height: 26px;
+    }
+    100% {
+      opacity: 1;
+      height: 26px;
+    }
+  }
+}

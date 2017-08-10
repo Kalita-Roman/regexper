@@ -1,0 +1,38 @@
+.text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 2px 0;
+
+  &__led {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    flex: 0 1 20px;
+    border-radius: 50%;
+    border: 1px solid $BORDERCOLOR;
+    box-sizing: border-box;
+    transition: background-color 300ms;
+
+    &--true {
+      background-color: green;
+    }
+
+    &--false {
+      background-color: red;
+    }
+  }
+
+  &__input {
+    flex: 1 0;
+    height: 24px;
+    margin-right: 10px; 
+    border: 1px solid $BORDERCOLOR;
+    border-radius: $BORDERRADIUS; 
+    padding: 0 10px;
+  }
+
+  &__button {
+    flex: 0 1;
+  }
+}
